@@ -1,0 +1,148 @@
+<!doctype html>
+<html lang="it">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="theme-color" content="#f3ede2">
+<title>Erika & Luca — Ci sposiamo!</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=Great+Vibes&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div id="opening" class="opening">
+  <div class="paper-noise"></div>
+  <span class="flower f1">✿</span><span class="flower f2">✿</span>
+  <div class="envelope-scene">
+    <div id="envelope" class="envelope">
+      <div class="letter"><img src="partecipazione-1.png" alt=""></div>
+      <div class="back"></div>
+      <div class="flap"></div>
+      <button id="seal" class="wax" aria-label="Apri l'invito">
+        <span>E</span><b>&amp;</b><span>L</span>
+      </button>
+      <div class="tap">TOCCA IL SIGILLO<br><small>per aprire</small></div>
+    </div>
+  </div>
+  <p class="opening-note">Un invito speciale per te</p>
+</div>
+
+<section id="invitation" class="invitation" aria-hidden="true">
+  <div class="ornament">❦</div>
+  <div class="sheet"><img src="partecipazione-1.png" alt="Partecipazione Erika e Luca"></div>
+  <button id="enter" class="button">ENTRA NEL SITO <span>↓</span></button>
+</section>
+
+<main id="site" class="site" aria-hidden="true">
+  <section class="hero page">
+    <div class="corner left">❧</div><div class="corner right">❧</div>
+    <p class="eyebrow">IL NOSTRO MATRIMONIO</p>
+    <h1>Erika <em>&amp;</em> Luca</h1>
+    <div class="rule">♡</div>
+    <p class="date">30 SETTEMBRE 2027</p>
+    <div class="dragon">♢</div>
+    <p class="script">Ci sposiamo!</p>
+    <a href="#welcome" class="scroll">⌄</a>
+  </section>
+
+  <section id="welcome" class="page card-section">
+    <div class="ornate-card">
+      <p class="eyebrow">BENVENUTI</p>
+      <h2>Il nostro giorno,<br>insieme a voi</h2>
+      <div class="rule">❦</div>
+      <p>Abbiamo creato questo piccolo angolo per accompagnarvi fino al nostro grande giorno. Qui troverete tutte le informazioni, i dettagli e qualche ricordo da condividere.</p>
+    </div>
+  </section>
+
+  <section class="page invite-preview">
+    <div class="label">LA PARTECIPAZIONE</div>
+    <div class="paper"><img src="partecipazione-2.png" alt="Dettagli della partecipazione" loading="lazy"></div>
+  </section>
+
+  <section class="page card-section" id="programma">
+    <div class="ornate-card timeline-card">
+      <p class="eyebrow">IL GRANDE GIORNO</p>
+      <h2>Il programma</h2>
+      <div class="timeline">
+        <div><strong>15:00</strong><span>Cerimonia</span></div>
+        <div><strong>16:30</strong><span>Aperitivo di benvenuto</span></div>
+        <div><strong>18:30</strong><span>Cena</span></div>
+        <div><strong>21:30</strong><span>Taglio della torta</span></div>
+        <div><strong>23:00</strong><span>Festa</span></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="page card-section location">
+    <div class="ornate-card">
+      <p class="eyebrow">DOVE CI SPOSIAMO</p>
+      <h2>La location</h2>
+      <div class="building">⌂</div>
+      <p><strong>INSERISCI QUI LA LOCATION</strong><br>Inserisci qui l'indirizzo completo.</p>
+      <a class="outline" href="https://www.google.com/maps" target="_blank" rel="noopener">COME ARRIVARE ↗</a>
+    </div>
+  </section>
+
+  <section class="page card-section">
+    <div class="ornate-card story">
+      <p class="eyebrow">LA NOSTRA STORIA</p>
+      <h2>Due strade,<br>una sola storia</h2>
+      <div class="photo-placeholder">📷<br><small>Qui possiamo inserire una vostra foto</small></div>
+      <p>Qui potremo raccontare la vostra storia, dal primo incontro fino a questo giorno speciale.</p>
+    </div>
+  </section>
+
+  <section class="page card-section">
+    <div class="ornate-card gallery">
+      <p class="eyebrow">I NOSTRI MOMENTI</p>
+      <h2>Ricordi</h2>
+      <div class="photo-grid">
+        <div>Foto 1</div><div>Foto 2</div><div>Foto 3</div><div>Foto 4</div>
+      </div>
+      <p class="small">Quando mi mandi le foto, le inseriamo qui.</p>
+    </div>
+  </section>
+
+  <section class="page card-section" id="rsvp">
+    <div class="ornate-card">
+      <p class="eyebrow">RSVP</p>
+      <h2>Conferma<br>la tua presenza</h2>
+      <div class="rule">♡</div>
+      <p>La tua risposta renderà il nostro giorno ancora più speciale.</p>
+      <a class="button" href="mailto:INSERISCI-EMAIL@example.com?subject=Conferma%20presenza%20Erika%20%26%20Luca">CONFERMA LA PRESENZA</a>
+    </div>
+  </section>
+
+  <section class="page card-section registry">
+    <div class="ornate-card">
+      <p class="eyebrow">UN PENSIERO PER NOI</p>
+      <h2>Il nostro futuro</h2>
+      <div class="rule">❦</div>
+      <p>Se desiderate farci un pensiero, abbiamo preparato una piccola card con le coordinate per il nostro futuro insieme.</p>
+      <button id="openIban" class="button">SCOPRI LA CARD</button>
+      <div id="ibanCard" class="iban-card" aria-hidden="true">
+        <button id="closeIban" class="close" aria-label="Chiudi">×</button>
+        <div class="iban-inner">
+          <img src="iban-fronte.png" alt="Bigliettino per i regali e i pensieri" class="iban-image">
+          <div class="iban-info">
+            <p class="eyebrow">PER IL NOSTRO FUTURO</p>
+            <p>Le coordinate e il testo del bigliettino sono riportati nella card che ci hai fornito.</p>
+            <img src="iban-retro.png" alt="Retro del bigliettino" class="iban-image second">
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer page">
+    <div class="dragon-footer">♢</div>
+    <p>Grazie di cuore</p>
+    <div class="script">Erika &amp; Luca</div>
+    <small>30 · 09 · 2027 ♡</small>
+  </footer>
+</main>
+<script src="script.js"></script>
+</body>
+</html>
