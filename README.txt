@@ -1,27 +1,13 @@
-# Erika & Luca — Wedding Website
+ERIKA & LUCA — SITO V2
+Questa versione aggiunge:
+- apertura con busta e sigillo in ceralacca;
+- carta, cornici, motivi floreali blu e dettagli oro;
+- sezioni più decorate;
+- programma, location, storia, galleria e RSVP;
+- card separata per i regali/pensieri con le immagini IBAN fornite.
 
-Sito statico gratuito in HTML/CSS/JavaScript.
-
-## File principali
-
-- `index.html` — struttura del sito
-- `style.css` — grafica e animazioni
-- `script.js` — apertura della busta e navigazione
-- `partecipazione-1.png` — prima pagina della partecipazione
-- `partecipazione-2.png` — seconda pagina della partecipazione
-
-## Cosa personalizzare
-
-Nel file `index.html` cerca:
-- `30 · 09 · 2027`
-- `Ristorante 123`
-- `Anywhere, any city`
-- `INSERISCI-EMAIL@example.com`
-
-e sostituiscili con i dati definitivi.
-
-Per cambiare la grafica iniziale basta sostituire `partecipazione-1.png` e/o `partecipazione-2.png` mantenendo gli stessi nomi.
-
-## Pubblicazione gratuita
-
-Il sito è statico, quindi può essere pubblicato su GitHub Pages senza un server.
+Prima della pubblicazione sostituisci nel file index.html:
+- INSERISCI QUI LA LOCATION
+- l'indirizzo della location
+- INSERISCI-EMAIL@example.com
+- eventuali orari del programma.
