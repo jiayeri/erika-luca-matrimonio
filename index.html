@@ -1,0 +1,155 @@
+<!doctype html>
+<html lang="it">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta name="theme-color" content="#f4f0e8">
+  <meta name="description" content="Il matrimonio di Erika & Luca — 30 settembre 2027">
+  <title>Erika & Luca — Ci sposiamo!</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=Great+Vibes&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- SCHERMATA INIZIALE: BUSTA + CERALLACCA -->
+  <div id="envelopeScreen" class="envelope-screen" aria-label="Apri la partecipazione">
+    <div class="paper-grain"></div>
+
+    <div class="envelope-wrap">
+      <div class="envelope" id="envelope">
+        <div class="envelope-flap"></div>
+        <div class="envelope-pocket"></div>
+
+        <div class="seal" id="seal" role="button" tabindex="0" aria-label="Rompi il sigillo e apri l'invito">
+          <span>E</span><b>&</b><span>L</span>
+        </div>
+
+        <div class="envelope-prompt">
+          <span class="tiny-heart">♡</span>
+          <span>tocca il sigillo per aprire</span>
+          <span class="tiny-heart">♡</span>
+        </div>
+      </div>
+    </div>
+
+    <p class="hint">Un invito speciale per te</p>
+  </div>
+
+  <!-- INVITO -->
+  <main id="invitation" class="invitation" aria-hidden="true">
+    <section class="invitation-card">
+      <div class="card-shadow"></div>
+      <img src="partecipazione-1.png" alt="Partecipazione di matrimonio Erika e Luca" class="invitation-image">
+    </section>
+
+    <button id="enterSite" class="enter-button">
+      <span>Entra nel sito</span>
+      <span class="arrow">↓</span>
+    </button>
+  </main>
+
+  <!-- SITO -->
+  <div id="site" class="site" aria-hidden="true">
+    <header class="hero">
+      <div class="ornament top"></div>
+      <p class="eyebrow">IL NOSTRO GIORNO</p>
+      <h1>Erika <span>&amp;</span> Luca</h1>
+      <p class="date">30 · 09 · 2027</p>
+
+      <div class="countdown" id="countdown" aria-label="Conto alla rovescia per il matrimonio">
+        <p class="countdown-label">Mancano</p>
+        <div class="countdown-grid">
+          <div class="countdown-item"><strong id="countdownDays">—</strong><span>giorni</span></div>
+          <div class="countdown-item"><strong id="countdownHours">—</strong><span>ore</span></div>
+          <div class="countdown-item"><strong id="countdownMinutes">—</strong><span>minuti</span></div>
+          <div class="countdown-item"><strong id="countdownSeconds">—</strong><span>secondi</span></div>
+        </div>
+      </div>
+
+      <div class="dragon-mini" aria-hidden="true"><span class="floral-mark">✿</span></div>
+      <p class="intro">Ci sposiamo!</p>
+      <a class="scroll-cue" href="#benvenuti" aria-label="Scorri verso il basso">⌄</a>
+    </header>
+
+    <section id="benvenuti" class="section welcome">
+      <p class="eyebrow">BENVENUTI</p>
+      <h2>Una giornata da vivere insieme</h2>
+      <p>
+        Abbiamo creato questo piccolo spazio per raccogliere tutte le informazioni
+        del nostro matrimonio. Non vediamo l'ora di festeggiare con voi.
+      </p>
+    </section>
+
+    <section class="section invitation-pages">
+      <div class="page-frame">
+        <img src="partecipazione-2.png" alt="Dettagli della partecipazione" loading="lazy">
+      </div>
+    </section>
+
+    <section id="programma" class="section details">
+      <p class="eyebrow">IL PROGRAMMA</p>
+      <h2>La giornata</h2>
+
+      <div class="timeline">
+        <article class="event">
+          <span class="time">17:00</span>
+          <h3>Ci ritroviamo</h3>
+          <p>Al Ristorante 123<br>Anywhere, any city</p>
+        </article>
+
+        <article class="event">
+          <span class="time">A SEGUIRE</span>
+          <h3>Festeggiamo insieme</h3>
+          <p>Cena, brindisi, musica e tanti momenti da ricordare.</p>
+        </article>
+      </div>
+    </section>
+
+    <section id="location" class="section location">
+      <p class="eyebrow">DOVE</p>
+      <h2>Ristorante 123</h2>
+      <p>Anywhere, any city</p>
+      <a class="outline-button" href="https://www.google.com/maps" target="_blank" rel="noopener">Apri su Google Maps ↗</a>
+    </section>
+
+    <section id="iban" class="section iban">
+      <p class="eyebrow">UN PENSIERO PER IL NOSTRO VIAGGIO</p>
+      <h2>Verso la Cina</h2>
+      <p>Per chi volesse contribuire al nostro viaggio tra draghi può farlo tramite</p>
+
+      <div class="iban-card" id="ibanCard">
+        <button type="button" class="iban-card-trigger" id="ibanToggle" aria-expanded="false" aria-controls="ibanDetails">
+          <span class="iban-card-icon">♡</span>
+          <span class="iban-card-title">Contribuisci al nostro viaggio</span>
+          <span class="iban-card-arrow" aria-hidden="true">⌄</span>
+        </button>
+
+        <div class="iban-details" id="ibanDetails" aria-hidden="true">
+          <img class="iban-image" src="Fronte.png" alt="Dati per il contributo al viaggio degli sposi">
+        </div>
+      </div>
+    </section>
+
+    <section id="rsvp" class="section rsvp">
+      <p class="eyebrow">RSVP</p>
+      <h2>Ci sarai?</h2>
+      <p>Facci sapere se potrai festeggiare con noi.</p>
+      <a class="primary-button" href="mailto:INSERISCI-EMAIL@example.com?subject=Conferma%20presenza%20—%20Erika%20%26%20Luca">
+        Conferma la presenza
+      </a>
+      <p class="small-note">Sostituisci l'indirizzo email nel codice con il tuo.</p>
+    </section>
+
+    <footer class="footer">
+      <div class="ornament bottom"></div>
+      <p>Erika &amp; Luca</p>
+      <span>30 · 09 · 2027</span>
+      <small>Con amore ♡</small>
+    </footer>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
