@@ -1,52 +1,42 @@
-const opening = document.getElementById("opening");
+const envelopeScreen = document.getElementById("envelopeScreen");
+const envelope = document.getElementById("envelope");
 const seal = document.getElementById("seal");
-const inviteReveal = document.getElementById("inviteReveal");
+const invitation = document.getElementById("invitation");
 const enterSite = document.getElementById("enterSite");
 const site = document.getElementById("site");
 
 let opened = false;
 
-function openInvitation() {
+function openEnvelope() {
   if (opened) return;
   opened = true;
 
-  // Prima rompe il sigillo, poi apre il lembo e solo dopo mostra la partecipazione.
-  opening.classList.add("open");
+  envelopeScreen.classList.add("opened");
+  envelopeScreen.classList.add("is-opening");
 
   setTimeout(() => {
-    opening.classList.add("hide");
-    inviteReveal.classList.add("show");
-    inviteReveal.setAttribute("aria-hidden", "false");
-  }, 1550);
+    envelopeScreen.classList.add("is-hidden");
+    invitation.classList.add("visible");
+    invitation.setAttribute("aria-hidden", "false");
+  }, 950);
 }
 
-seal.addEventListener("click", openInvitation);
+seal.addEventListener("click", openEnvelope);
 seal.addEventListener("keydown", (event) => {
   if (event.key === "Enter" || event.key === " ") {
     event.preventDefault();
-    openInvitation();
+    openEnvelope();
   }
 });
 
 enterSite.addEventListener("click", () => {
-  inviteReveal.style.display = "none";
-  site.classList.add("show");
-  site.setAttribute("aria-hidden", "false");
-  window.scrollTo({ top: 0, behavior: "smooth" });
-});
+  invitation.classList.remove("visible");
+  invitation.setAttribute("aria-hidden", "true");
 
-const modal = document.getElementById("cardModal");
-const openCard = document.getElementById("openCard");
-const closeCard = document.getElementById("closeCard");
-
-openCard.addEventListener("click", () => {
-  modal.classList.add("show");
-  modal.setAttribute("aria-hidden", "false");
-});
-closeCard.addEventListener("click", () => {
-  modal.classList.remove("show");
-  modal.setAttribute("aria-hidden", "true");
-});
-modal.addEventListener("click", (event) => {
-  if (event.target === modal) closeCard.click();
+  setTimeout(() => {
+    invitation.style.display = "none";
+    site.classList.add("visible");
+    site.setAttribute("aria-hidden", "false");
+    window.scrollTo({ top: 0, behavior: "smooth" });
+  }, 550);
 });
